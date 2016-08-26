@@ -13,7 +13,7 @@ Usage
 
 #### repair db
 ```sh
-leveldb-tools -dbpatch=/path/to/leveldb -action=repair
+leveldb-tools -dbpatch /path/to/leveldb -action repair
 ```
 this action will rebuild each .ldb file.
 
@@ -21,14 +21,14 @@ this action will rebuild each .ldb file.
 
 #### import db
 ```sh
-leveldb-tools -dbpatch=/path/to/leveldb -action=import -file/path/to/dump.file
+leveldb-tools -dbpatch /path/to/leveldb -action import -file /path/to/dump.file
 ```
 
 ----
 
 #### export db
 ```sh
-leveldb-tools -dbpath=/path/to/leveldb -action=export -file=/path/to/dump.file
+leveldb-tools -dbpath /path/to/leveldb -action export -file /path/to/dump.file
 ```
 
 iterator through the whole db, and dump all the key/value pairs to file.
@@ -37,7 +37,7 @@ iterator through the whole db, and dump all the key/value pairs to file.
 
 #### export db(force)
 ```sh
-leveldb-tools -dbpath=/path/to/leveldb -action=export2 -file=/path/to/dump.file
+leveldb-tools -dbpath /path/to/leveldb -action export2 -file /path/to/dump.file
 ```
 try this action if action=export not work.
 
