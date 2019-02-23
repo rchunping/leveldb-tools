@@ -13,7 +13,7 @@ Usage
 
 #### repair db
 ```sh
-leveldb-tools -dbpatch /path/to/leveldb -action repair
+leveldb-tools -dbpath /path/to/leveldb -action repair
 ```
 this action will rebuild each .ldb file.
 
@@ -21,7 +21,7 @@ this action will rebuild each .ldb file.
 
 #### import db
 ```sh
-leveldb-tools -dbpatch /path/to/leveldb -action import -file /path/to/dump.file
+leveldb-tools -dbpath /path/to/leveldb -action import -file /path/to/dump.file
 ```
 
 ----
